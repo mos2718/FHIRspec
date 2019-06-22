@@ -1,0 +1,23 @@
+
+聯測主題:
+1. 醫療機構之組織與病人管理(patient management)
+   測試情境:
+   1.1 增修改查特定醫療單位(含個人健康管理系統)的病人
+   1.2 選擇特定病人後，以其 patient.id 進行主題 2,3,4 標準化資料之增修改查
+
+2. IoMT 病人生理資料管理(IoMT FHIR observation resource management)
+   應用情境:
+   1. 院內病人生理監測資料上傳院內 FHIR server (如病房之 web server)，提供醫護人員查詢調閱檢視
+   2. 民眾或照護中心病人生理監測資料上傳雲端 FHIR server ，提供個人或指定之親友、醫護人員查詢調閱檢視
+ 
+3. 標準化雲端之醫學影像、標記、報告調閱檢視 (standard web solutions for medical image、annotation、and report retrieval)
+   應用情境: PACS 匯出標準化之醫學影像、標記、報告，民眾或指定之醫院服務人員將資料上傳 FHIR + DICOMweb server，提供個人或指定之親友、醫護人員查詢調閱檢視
+ 
+   註: 主題 3 之 DICOMweb server 僅需支援 WADO 即可，報告及標記可於 FHIR server 儲存及調閱，以利於初期各廠商、醫院、或學術單位配合聯測
+
+4. 臨床作業圖片上傳及調閱
+   應用情境: 適用於眼科、病理顯微影像、內視鏡等，將圖片及其描述資料，轉換成標準規格，上傳到 DICOMweb server。利於診所、居家、與行動裝置存取影像。
+   註: 
+   1. 主題 4 之 DICOMweb server 僅需支援 WADO and STOW 傳輸
+   2. 參考 IHE Web-based Image Capture 整合規範，但以 FHIR 格式取得病人及其就醫資訊
+   3. DICOMweb server 可支援傳統 DICOM 傳輸，以利與 PACS server 連結，存取影像。但也可不連結   PACS server，DICOMweb server 以 STOW 、WADO、QIDO 等傳輸機制，提供 web 存取醫學影像。

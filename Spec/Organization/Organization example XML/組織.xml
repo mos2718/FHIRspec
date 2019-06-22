@@ -1,0 +1,19 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+    <text value="醫學中心"/>
+  </type>
+  <name value="花蓮醫院"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="038880001"/>
+  </telecom>
+  <address>
+    <postalCode value="97004"/>
+    <text value="花蓮縣花蓮市中央路3段701號"/>
+  </address>
+</Organization>

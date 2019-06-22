@@ -1,0 +1,53 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+	<id value=""/>
+	<identifier>
+        <value value="1234"/> 
+    </identifier>
+	<status value="completed"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/medication-request-category"/> 
+            <code value="Outpatient"/> 
+		</coding>
+	</category>
+	<subject> 
+		<reference value="Patient/9957"/> 
+		<display value="Yi-Tsung Yi"/>
+    </subject>
+	<authoredOn value="2018-03-12T14:57:57"/>
+	<requester>
+		<onBehalfOf> 
+            <reference value="Organization/9955"/>
+			<display value="醫院A"/>			
+        </onBehalfOf> 
+	</requester>
+	<dosageInstruction>
+		<additionalInstruction>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/additional-instruction-codes"/>
+				<code value="311504000"/>
+				<display value="With or after food"/>
+			</coding>
+		</additionalInstruction>
+		<timing>
+			<code>  
+				<coding>
+					<system value="www.nhi.gov.tw"/>
+					<code value="BID"/>
+					<display value="每天兩次"/>
+				</coding>
+			</code>  
+		</timing>
+		<route>
+		  <coding>
+			<system value="www.nhi.gov.tw"/>
+			<code value="PO"/>
+			<display value="口服"/>
+		  </coding>
+		</route>
+	</dosageInstruction>
+</MedicationRequest>
+
+
+
+

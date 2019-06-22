@@ -1,0 +1,51 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <use value="offical"/>
+    <type>
+	  <coding> 
+	    <code value="IDN.TW" />
+		<display value="TW ID Number"  />
+	  </coding>
+      <text value="身份證字號"/>
+    </type>
+    <value value="A123123123"/>
+    <assigner>
+      <display value="內政部"/>
+    </assigner>
+  </identifier>
+ 
+ 
+  <identifier>
+    <type>
+      <text value="臺灣居民來往大陸通行證"/>
+    </type>
+    <value value="12345678900(B) "/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="中華民國護照"/>
+    </type>
+    <value value="305881243"/>
+    <assigner>
+      <display value="外交部"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="病歷號"/>
+    </type>
+    <value value="RS9958462"/>
+    <assigner>
+      <display value="花蓮慈濟醫學中心"/>
+    </assigner>
+  </identifier>
+  <name>
+    <text value="陳泗旭"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="0958000111"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1956-05-27"/>
+</Patient>

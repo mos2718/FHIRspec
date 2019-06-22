@@ -1,0 +1,40 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <use value="official"/>
+    <type>
+	  <coding> 
+	    <code value="IDN.TW" />
+		<display value="TW ID Number"  />
+	  </coding>
+      <text value="身份證字號"/>
+    </type>
+    <value value="A123000123"/>
+    <assigner>
+      <display value="內政部"/>
+    </assigner>
+  </identifier>
+ <identifier>
+    <use value="usual"/>
+    <type>
+	  <coding> 
+	    <code value="IDN.CN" />
+		<display value="CN ID Number"  />
+	  </coding>
+      <text value="台湾居民来往大陆通行证"/>
+    </type>
+    <value value="12345678900(B) "/>
+  </identifier>  
+  
+  <name>
+    <use value="official"/>
+    <text value="陳元元"/>
+	<family value="陳"/>
+	<given value="陳元元"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="0958000111"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1956-05-27"/>
+</Patient>

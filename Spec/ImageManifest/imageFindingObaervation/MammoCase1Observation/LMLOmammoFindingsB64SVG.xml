@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir"> 
+   <id value=""/>	
+   <status value="preliminary"/>   
+   <category> 
+		<coding> 
+			<system value="http://hl7.org/fhir/observation-category"/> 
+			<code value="imaging"/>  
+		</coding> 
+   </category>
+   <code> 
+    <coding> 
+      <system value="https://www.dicom.org.tw/"/> 
+      <code value="mammo.finding.mass"/> 
+      <display value="mammography mass finding"/> 
+    </coding> 
+   </code>     
+   <subject> 
+		<reference value="Patient/10065"/> 
+   </subject> 
+   <effectiveDateTime value="2018-08-05T07:09:26"/> 
+  <component> 
+    <code> 
+     <coding> 
+      <system value="https://www.dicom.org.tw/"/> 
+      <code value="SVG.Annotation"/> 
+      <display value="SVG Annotation"/> 
+    </coding> 	  
+    </code> 
+	<valueString value="PHN2ZyB3aWR0aD0iMjU2MCIgaGVpZ2h0PSIzMzI4IiA+CjxpbWFnZSB4PSIwIiB5PSIwIiB3aWR0aD0iMjU2MCIgaGVpZ2h0PSIzMzI4IiB4bGluazpocmVmPSJodHRwOi8vMjAzLjY0Ljg0LjExMy94L2ltZ0Rpci9EQ01SZXQxMjAuanBnIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNTYwLCAwKSBzY2FsZSgtMSwxKSIgIC8+CjxjaXJjbGUgY3g9IjIwMjYiIGN5PSIxOTAwIiByPSI2IiAgZmlsbD0icmVkIiAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU2MCwgMCkgc2NhbGUoLTEsMSkiIC8+Cjxwb2x5Z29uIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NjAsIDApIHNjYWxlKC0xLDEpIiBwb2ludHM9IjIwMjksMTc4OSwyMDI5LDE3OTQsMjAxMSwxNzk0LDIwMTEsMTgwMCwyMDA2LDE4MDAsMjAwNiwxODA2LDE5OTQsMTgwNiwxOTk0LDE4MTEsMTk4OSwxODExLDE5ODksMTgxNywxOTcxLDE4MTcsMTk3MSwxODIzLDE5NTQsMTgyMywxOTU0LDE4MjksMTk0OSwxODI5LDE5NDksMTg0NiwxOTQzLDE4NDYsMTk0MywxODYzLDE5MzcsMTg2MywxOTM3LDE4NzQsMTkzMSwxODc0LDE5MzEsMTg5MSwxOTM3LDE4OTEsMTkzNywxODk3LDE5NDMsMTg5NywxOTQzLDE5MDMsMTk0OSwxOTAzLDE5NDksMTkwOSwxOTU0LDE5MDksMTk1NCwxOTE0LDE5NjAsMTkxNCwxOTYwLDE5MzcsMTk1NCwxOTM3LDE5NTQsMTk0OSwxOTQ5LDE5NDksMTk0OSwxOTgzLDE5NTQsMTk4MywxOTU0LDIwMDAsMTk2MCwyMDAwLDE5NjAsMjAwNiwxOTY2LDIwMDYsMTk2NiwyMDExLDE5NzcsMjAxMSwxOTc3LDIwMTcsMTk4OSwyMDE3LDE5ODksMjAyMywxOTk0LDIwMjMsMTk5NCwyMDI5LDIwMDAsMjAyOSwyMDAwLDIwMzQsMjAxMSwyMDM0LDIwMTEsMjAyOSwyMDE3LDIwMjksMjAxNywyMDIzLDIwMjMsMjAyMywyMDIzLDIwMTcsMjAyOSwyMDE3LDIwMjksMjAwNiwyMDM0LDIwMDYsMjAzNCwxOTk0LDIwNDAsMTk5NCwyMDQwLDE5NzcsMjA0NiwxOTc3LDIwNDYsMTk2NiwyMDUxLDE5NjYsMjA1MSwxOTYwLDIwNTcsMTk2MCwyMDU3LDE5NTQsMjA2MywxOTU0LDIwNjMsMTk0OSwyMDc0LDE5NDksMjA3NCwxOTQzLDIwOTcsMTk0MywyMDk3LDE5MzcsMjEwOSwxOTM3LDIxMDksMTkzMSwyMTE0LDE5MzEsMjExNCwxOTI2LDIxMjAsMTkyNiwyMTIwLDE5MjAsMjEyNiwxOTIwLDIxMjYsMTg2MywyMTIwLDE4NjMsMjEyMCwxODU3LDIxMTQsMTg1NywyMTE0LDE4NDAsMjEwOSwxODQwLDIxMDksMTgyOSwyMTAzLDE4MjksMjEwMywxODE3LDIwOTcsMTgxNywyMDk3LDE4MTEsMjA5MSwxODExLDIwOTEsMTgwNiwyMDc0LDE4MDYsMjA3NCwxODAwLDIwNjMsMTgwMCwyMDYzLDE3OTQsMjA1NywxNzk0LDIwNTcsMTc4OSIKIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOnJlZDtzdHJva2Utd2lkdGg6MyIgLz4KPC9zdmc+"  /> 
+  </component>   
+ </Observation> 
+
+
+
+
+

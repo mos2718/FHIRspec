@@ -1,0 +1,20 @@
+
+ 
+3. 標準化雲端之醫學影像、標記、報告調閱檢視 (standard web solutions for medical image、annotation、and report retrieval)
+   應用情境: PACS 匯出標準化之醫學影像、標記、報告，民眾或指定之醫院服務人員將資料上傳 FHIR + DICOMweb server，提供個人或指定之親友、醫護人員查詢調閱檢視
+ 
+   註: 主題 3 之 DICOMweb server 僅需支援 WADO 即可，報告及標記可於 FHIR server 儲存及調閱，以利於初期各廠商、醫院、或學術單位配合聯測
+
+附上昨天討論之 FHIR 乳篩結構化報告草案。
+可否請大家回應下周 27 or 28 方便的時間(若時間都不方便也請回應)，
+我們就此規範進一步視訊討論。
+ 
+初步分析，標準化Web 醫學影像及報告整合，包含以下基礎資訊互通規範:
+1. 醫學影像上傳到 DICOMweb server ，利於使用 WADO 機制調閱
+2. 產生 FHIR ImageStudy 該次影像檢查清單，並上傳到 FHIR server，以利後續查詢病人歷次影像檢查清單列表
+3. 將影像輪廓標記轉換成 FHIR observation 規格，並上傳到 FHIR server，以利後續影像報告參考到影像標記
+
+基於上述規範，可發展各式不同應用領域之標準化影像報告。
+另外，一次影像檢查，會產生許多的資訊(resources)，這些資訊需要再打包整理(依據 FHIR List or Composition 規格?)，我們也需進一步討論確認。 
+測試項目 3 主要結合 WADO 及 FHIR imageStudy，
+利於放射科醫師使用 DICOMweb 及 FHIR 標準機制，調閱檢視醫學影像及影像發現 (FHIR observation)。

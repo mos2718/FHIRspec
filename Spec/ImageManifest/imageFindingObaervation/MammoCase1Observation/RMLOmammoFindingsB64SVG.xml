@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir"> 
+   <id value=""/>	
+   <status value="preliminary"/>   
+   <category> 
+		<coding> 
+			<system value="http://hl7.org/fhir/observation-category"/> 
+			<code value="imaging"/>  
+		</coding> 
+   </category>
+   <code> 
+    <coding> 
+      <system value="https://www.dicom.org.tw/"/> 
+      <code value="mammo.finding.mass"/> 
+      <display value="mammography mass finding"/> 
+    </coding> 
+   </code>     
+   <subject> 
+		<reference value="Patient/10065"/> 
+   </subject> 
+   <effectiveDateTime value="2018-08-05T07:09:26"/> 
+  <component> 
+    <code> 
+     <coding> 
+      <system value="https://www.dicom.org.tw/"/> 
+      <code value="SVG.Annotation"/> 
+      <display value="SVG Annotation"/> 
+    </coding> 	  
+    </code> 
+    <valueString value="PHN2ZyB3aWR0aD0iMjU2MCIgaGVpZ2h0PSIzMzI4IiA+CjxpbWFnZSB4PSIwIiB5PSIwIiB3aWR0aD0iMjU2MCIgaGVpZ2h0PSIzMzI4IiB4bGluazpocmVmPSJodHRwOi8vMjAzLjY0Ljg0LjExMy94L2ltZ0Rpci9EQ01SZXQxMjIuanBnIiAvPgogPGNpcmNsZSBjeD0iMTA5NCIgY3k9IjEzODkiIHI9IjYiICBmaWxsPSJyZWQiIC8+Cjxwb2x5Z29uIHBvaW50cz0iMTEwOSwxMzMxLDExMDksMTMzNywxMTE0LDEzMzcsMTExNCwxMzQ5LDExMjAsMTM0OSwxMTIwLDEzNzEsMTEyNiwxMzcxLDExMjYsMTM3NywxMTMxLDEzNzcsMTEzMSwxMzg5LDExMzcsMTM4OSwxMTM3LDE0MTEsMTEzMSwxNDExLDExMzEsMTQxNywxMTI2LDE0MTcsMTEyNiwxNDIzLDExMTQsMTQyMywxMTE0LDE0MjksMTA5NywxNDI5LDEwOTcsMTQzNCwxMDkxLDE0MzQsMTA5MSwxNDQwLDEwNzQsMTQ0MCwxMDc0LDE0MzQsMTA2OSwxNDM0LDEwNjksMTQyOSwxMDYzLDE0MjksMTA2MywxNDIzLDEwNTcsMTQyMywxMDU3LDE0MTcsMTA1MSwxNDE3LDEwNTEsMTQwNiwxMDU3LDE0MDYsMTA1NywxMzg5LDEwNjMsMTM4OSwxMDYzLDEzODMsMTA1NywxMzgzLDEwNTcsMTM3MSwxMDYzLDEzNzEsMTA2MywxMzQ5LDEwNjksMTM0OSwxMDY5LDEzNDMsMTA3NCwxMzQzLDEwNzQsMTMzNywxMDg2LDEzMzcsMTA4NiwxMzMxIgogc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6cmVkO3N0cm9rZS13aWR0aDozIiAvPgo8L3N2Zz4="  /> 
+	
+  </component>
+   
+ </Observation> 
+
+
+
+
+

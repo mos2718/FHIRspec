@@ -1,0 +1,85 @@
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <uid value="urn:oid:1.2.1124.113532.134.0.1.3.20030423.143824.800378"/> 
+  <patient> 
+   		<reference value="Patient/10202"/> 
+		<display value="01_Mass_210^Normal"/>
+  </patient> 
+  <numberOfSeries value="2"/> 
+  <numberOfInstances value="5"/> 
+
+  <series> 
+    <uid value="urn:oid:1.2.1840.113681.2198909122.3931.3228559234.99.1"/> 
+    <modality> 
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/> 
+      <code value="DX"/> 
+    </modality>  
+    <description value="Mammography"/> 
+    <numberOfInstances value="4"/> 
+
+    <instance> 
+      <uid value="urn:oid:1.2.1840.113681.2198909122.3931.3228559234.102.1"/> 
+      <number value="1"/> 
+      <sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.1.2"/> 
+	  <path value="DCMFiles"/> 
+	  <file value="01_Mass_210_Normal_L_CC_1118.DCM"/> 
+	  <hash method="SHA256" value="ahjfhsgkgdktgtbkgkdfkd"/> 
+      <encodeMethod value="urn:oid:1.2.840.10008.1.2"/> <!-- DICOM Transfer Syntax -->
+	  <part10fileHedaer value="true"/> 
+	   <!-- imageSpecification for display DCM image easily, might need a sophisticate specification to present all image properly -->
+	  <imageSpecification value="{rows:3328, columns:2560, storedBytes:2, samplesPerPixel:1, WindowCenter:2047, WindowWidth:4096,  pixelDataOffset:11376 }"/>  <!-- bitallocated / 8  DICOM Transfer Syntax -->
+    </instance> 
+	
+	<instance> 
+      <uid value="urn:oid:1.2.840.113674.950809132633027.100"/> 
+      <number value="1"/> 
+      <sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.4"/> 
+	  <path value="DCMFiles"/> 
+	  <file value="01_Mass_210_Normal_L_MLO_1120.DCM"/> 
+	  <hash method="SHA256" value="ahjfhsgkgdktgtbkgkdfkd"/> 
+      <encodeMethod value="urn:oid:1.2.840.10008.1.2"/> <!-- DICOM Transfer Syntax -->
+	  <part10fileHedaer value="true"/> 
+	   <!-- imageSpecification for display DCM image easily, might need a sophisticate specification to present all image properly -->
+	  <imageSpecification value="{rows:3328, columns:2560, storedBytes:2, samplesPerPixel:1, WindowCenter:2047, WindowWidth:4096,  pixelDataOffset:11390 }"/>  <!-- bitallocated / 8  DICOM Transfer Syntax -->
+    </instance>
+
+    <instance> 
+      <uid value="urn:oid:1.2.840.113674.950809132633027.100"/> 
+      <number value="1"/> 
+      <sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.4"/> 
+	  <path value="DCMFiles"/> 
+	  <file value="01_Mass_210_Normal_R_CC_1121.DCM"/> 
+	  <hash method="SHA256" value="ahjfhsgkgdktgtbkgkdfkd"/> 
+      <encodeMethod value="urn:oid:1.2.840.10008.1.2"/> <!-- DICOM Transfer Syntax -->
+	  <part10fileHedaer value="true"/> 
+	   <!-- imageSpecification for display DCM image easily, might need a sophisticate specification to present all image properly -->
+	  <imageSpecification value="{rows:3328, columns:2560, storedBytes:2, samplesPerPixel:1, WindowCenter:2047, WindowWidth:4096,  pixelDataOffset:11366 }"/>  <!-- bitallocated / 8  DICOM Transfer Syntax -->
+    </instance>
+
+    <instance> 
+      <uid value="urn:oid:1.2.840.113674.950809132633027.100"/> 
+      <number value="1"/> 
+      <sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.4"/> 
+	  <path value="DCMFiles"/> 
+	  <file value="01_Mass_210_Normal_R_MLO_1122.DCM"/> 
+	  <hash method="SHA256" value="ahjfhsgkgdktgtbkgkdfkd"/> 
+      <encodeMethod value="urn:oid:1.2.840.10008.1.2"/> <!-- DICOM Transfer Syntax -->
+	  <part10fileHedaer value="true"/> 
+	   <!-- imageSpecification for display DCM image easily, might need a sophisticate specification to present all image properly -->
+	  <imageSpecification value="{rows:3328, columns:2560, storedBytes:2, samplesPerPixel:1, WindowCenter:2047, WindowWidth:4096,  pixelDataOffset:11380 }"/>  <!-- bitallocated / 8  DICOM Transfer Syntax -->
+    </instance>
+
+    <instance> 
+      <uid value="urn:oid:1.2.840.113986.2.168431872.20060823.150046.657"/> 
+      <number value="1"/> 
+      <sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.88.50"/> 
+	  <path value="DCMFiles"/> 
+	  <file value="01_Mass_210_Normal_MG_CAD_SR.DCM"/> 
+	  <hash method="SHA256" value="ahjfhsgkgdktgtbkgkdfkd"/> 
+      <encodeMethod value="urn:oid:1.2.840.10008.1.2"/> <!-- DICOM Transfer Syntax -->
+	  <part10fileHedaer value="true"/> 
+	   <!-- imageSpecification for display DCM image easily, might need a sophisticate specification to present all image properly -->
+	  
+    </instance>
+	
+  </series>    
+</ImagingStudy> 

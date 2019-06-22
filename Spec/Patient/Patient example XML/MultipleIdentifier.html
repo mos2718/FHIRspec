@@ -1,0 +1,326 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="f569271b-cd7b-46ae-9b81-7bb33cf5bf85"/>
+   <meta>
+      <lastUpdated value="2018-12-18T21:20:06.780+00:00"/>
+   </meta>
+   <type value="searchset"/>
+   <total value="2"/>
+   <link>
+      <relation value="self"/>
+      <url value="http://hapi.fhir.org/baseDstu3/Patient?_format=html%2Fxml&amp;identifier=4567"/>
+   </link>
+   <entry>
+      <fullUrl value="http://hapi.fhir.org/baseDstu3/Patient/26323"/>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <id value="26323"/>
+            <meta>
+               <versionId value="2"/>
+               <lastUpdated value="2018-10-04T03:42:42.681+00:00"/>
+            </meta>
+            <text>
+               <status value="generated"/>
+               <div xmlns="http://www.w3.org/1999/xhtml"> 
+                  <div class="hapiHeaderText">John 
+                     <b>DOE </b> 
+                  </div> 
+                  <table class="hapiPropertyTable"> 
+                     <tbody> 
+                        <tr> 
+                           <td>Identifier</td> 
+                           <td>MRN001</td> 
+                        </tr> 
+                        <tr> 
+                           <td>Address</td> 
+                           <td> 
+                              <span>23 Tingle Street </span> 
+                              <br/> 
+                              <span>Mytown </span> 
+                              <span>Massachusetts </span> 
+                           </td> 
+                        </tr> 
+                        <tr> 
+                           <td>Date of birth</td> 
+                           <td> 
+                              <span>25 June 1963</span> 
+                           </td> 
+                        </tr> 
+                     </tbody> 
+                  </table> 
+               </div>
+            </text>
+            <identifier>
+               <use value="usual"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/v2/0203"/>
+                     <code value="MR"/>
+                     <display value="Medical record number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="MRN001"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="SB"/>
+                     <display value="Social Beneficiary Identifier"/>
+                  </coding>
+               </type>
+               <system value="http://hl7.org/fhir/sid/us-ssn"/>
+               <value value="MA-1234567"/>
+            </identifier>
+            <identifier>
+               <use value="secondary"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="SNO"/>
+                     <display value="Serial Number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/H2H-ssn"/>
+               <value value="4567"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="FILL"/>
+                     <display value="Filler Identifier"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="7543071786"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/v2/0203"/>
+                     <code value="DL"/>
+                     <display value="Driver's license number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="Cauc"/>
+            </identifier>
+            <name>
+               <use value="usual"/>
+               <family value="Doe"/>
+               <given value="John"/>
+            </name>
+            <telecom>
+               <system value="phone"/>
+               <value value="555-555-1212-1212"/>
+               <use value="home"/>
+            </telecom>
+            <telecom>
+               <system value="other"/>
+               <value value="English"/>
+               <use value="work"/>
+            </telecom>
+            <telecom>
+               <system value="email"/>
+               <use value="home"/>
+            </telecom>
+            <telecom>
+               <system value="email"/>
+               <use value="work"/>
+            </telecom>
+            <gender value="male"/>
+            <birthDate value="1963-06-25"/>
+            <address>
+               <line value="23 Tingle Street"/>
+               <city value="Mytown"/>
+               <state value="Massachusetts"/>
+               <postalCode value="01810"/>
+            </address>
+            <maritalStatus>
+               <coding>
+                  <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+                  <code value="M"/>
+                  <display value="Married"/>
+               </coding>
+            </maritalStatus>
+            <multipleBirthInteger value="0"/>
+            <communication>
+               <language>
+                  <coding>
+                     <system value="urn:ietf:bcp:47"/>
+                     <code value="en"/>
+                     <display value="English"/>
+                  </coding>
+               </language>
+            </communication>
+            <managingOrganization>
+               <reference value="Organization/22596"/>
+            </managingOrganization>
+         </Patient>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://hapi.fhir.org/baseDstu3/Patient/243738"/>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <id value="243738"/>
+            <meta>
+               <versionId value="3"/>
+               <lastUpdated value="2018-10-17T14:03:02.895+00:00"/>
+            </meta>
+            <text>
+               <status value="generated"/>
+               <div xmlns="http://www.w3.org/1999/xhtml"> 
+                  <div class="hapiHeaderText">John 
+                     <b>DOE </b> 
+                  </div> 
+                  <table class="hapiPropertyTable"> 
+                     <tbody> 
+                        <tr> 
+                           <td>Identifier</td> 
+                           <td>MRN001</td> 
+                        </tr> 
+                        <tr> 
+                           <td>Address</td> 
+                           <td> 
+                              <span>23 Tingle Street </span> 
+                              <br/> 
+                              <span>Mytown </span> 
+                              <span>Massachusetts </span> 
+                           </td> 
+                        </tr> 
+                        <tr> 
+                           <td>Date of birth</td> 
+                           <td> 
+                              <span>25 June 1963</span> 
+                           </td> 
+                        </tr> 
+                     </tbody> 
+                  </table> 
+               </div>
+            </text>
+            <identifier>
+               <use value="usual"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/v2/0203"/>
+                     <code value="MR"/>
+                     <display value="Medical record number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="MRN001"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="SB"/>
+                     <display value="Social Beneficiary Identifier"/>
+                  </coding>
+               </type>
+               <system value="http://hl7.org/fhir/sid/us-ssn"/>
+               <value value="MA-1234567"/>
+            </identifier>
+            <identifier>
+               <use value="secondary"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="SNO"/>
+                     <display value="Serial Number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/H2H-ssn"/>
+               <value value="4567"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/identifier-type"/>
+                     <code value="FILL"/>
+                     <display value="Filler Identifier"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="7543071786"/>
+            </identifier>
+            <identifier>
+               <use value="official"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/v2/0203"/>
+                     <code value="DL"/>
+                     <display value="Driver's license number"/>
+                  </coding>
+               </type>
+               <system value="http://ingbtcpic6vw040:8080/baseDstu3/PatientIdentifier"/>
+               <value value="Cauc"/>
+            </identifier>
+            <name>
+               <use value="usual"/>
+               <family value="Smith"/>
+               <given value="John"/>
+            </name>
+            <telecom>
+               <system value="phone"/>
+               <value value="555-555-1212-1212"/>
+               <use value="home"/>
+            </telecom>
+            <telecom>
+               <system value="other"/>
+               <value value="English"/>
+               <use value="work"/>
+            </telecom>
+            <telecom>
+               <system value="email"/>
+               <use value="home"/>
+            </telecom>
+            <telecom>
+               <system value="email"/>
+               <use value="work"/>
+            </telecom>
+            <gender value="male"/>
+            <birthDate value="1963-06-25"/>
+            <address>
+               <line value="23 Tingle Street"/>
+               <city value="Mytown"/>
+               <state value="Massachusetts"/>
+               <postalCode value="01810"/>
+            </address>
+            <maritalStatus>
+               <coding>
+                  <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+                  <code value="M"/>
+                  <display value="Married"/>
+               </coding>
+            </maritalStatus>
+            <multipleBirthInteger value="0"/>
+            <communication>
+               <language>
+                  <coding>
+                     <system value="urn:ietf:bcp:47"/>
+                     <code value="en"/>
+                     <display value="English"/>
+                  </coding>
+               </language>
+            </communication>
+            <managingOrganization>
+               <reference value="Organization/22596"/>
+            </managingOrganization>
+         </Patient>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+</Bundle>

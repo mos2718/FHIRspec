@@ -1,0 +1,20 @@
+Post Prganization
+http://hapi.fhir.org/baseDstu3/Organization
+
+Post Patient
+http://hapi.fhir.org/baseDstu3/Patient
+
+Post Condition
+http://hapi.fhir.org/baseDstu3/Condition
+
+
+Get Organization 1142975
+http://hapi.fhir.org/baseDstu3/Organization/1142975
+Get Patient 1142976
+http://hapi.fhir.org/baseDstu3/Patient/1142976
+Get Condition 1142977
+http://hapi.fhir.org/baseDstu3/Condition/1142977
+Get Condition 1142978
+http://hapi.fhir.org/baseDstu3/Condition/1142978
+Get patient.id conditio
+http://hapi.fhir.org/baseDstu3/Condition?subject:Patient=1142976

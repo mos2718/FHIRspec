@@ -1,0 +1,11 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <identifier>
+     <system value="http://MISAT.TW/TCUStdID"/>
+      <value value="106316118"/>
+   </identifier>
+   <name>
+      <text value="BBB"/>
+   </name>
+   <gender value="male"/>
+   <birthDate value="1940-01-01"/>
+</Patient>

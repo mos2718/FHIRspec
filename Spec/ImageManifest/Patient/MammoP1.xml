@@ -1,0 +1,13 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <value value="513091095"/>
+  </identifier>
+  <name>
+    <text value="01_Mass_210^Normal"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1940-01-01"/>
+  <managingOrganization>
+    <reference value="Organization/10201"/>
+  </managingOrganization>
+</Patient>

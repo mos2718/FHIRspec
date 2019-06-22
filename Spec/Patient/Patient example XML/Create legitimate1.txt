@@ -1,0 +1,63 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <text value="身份證字號"/>
+    </type>
+    <value value="A123123123"/>
+    <assigner>
+      <display value="內政部"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="陳泗旭"/>
+    <family value="陳"/>
+    <given value="泗旭"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="tcu@tcu.edu.tw"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="0958000111"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1956-05-27"/>
+  <address>
+    <use value="home"/>
+    <text value="花蓮縣花蓮市中央路三段701號"/>
+    <city value="花蓮縣"/>
+    <postalCode value="97004"/>
+    <country value="台灣"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/marital-status"/>
+      <code value="M"/>
+      <display value="Married"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0131"/>
+        <code value="C"/>
+        <display value="Emergency Contact"/>
+      </coding>
+      <text value="父親"/>
+    </relationship>
+    <name>
+      <text value="陳武伊"/>
+      <family value="陳"/>
+      <given value="武伊"/>
+    </name>
+    <address>
+      <text value="花蓮縣花蓮市介仁街67號"/>
+      <postalCode value="97074"/>
+      <country value="台灣"/>
+    </address>
+    <gender value="male"/>
+  </contact>
+</Patient>

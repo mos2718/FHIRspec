@@ -1,0 +1,24 @@
+病人不知是否在此醫院已有資料，可用Identifier, Name, birthday 查詢是否已有資料
+
+產生的病人
+http://hapi.fhir.org/baseDstu3/Patient/1293981
+http://hapi.fhir.org/baseDstu3/Patient/1293982/_history/1
+http://hapi.fhir.org/baseDstu3/Patient/1354608/_history/1
+
+Identifier
+使用 身分證字號、護照號碼、居留證號碼、院內病歷號為查詢條件，查詢病人
+
+Identifier 查詢範例
+http://hapi.fhir.org/baseDstu3/Patient?identifier=http://MISAT.TW/MRTest|MR001
+http://hapi.fhir.org/baseDstu3/Patient?identifier=http://MISAT.TW/TCUStdID|106316118
+    <system value="http://MISAT.TW/TCUStdID"/>
+      <value value="106316118"/>
+Name 查詢範例
+birthdate 查詢範例
+
+
+http://hapi.fhir.org/baseDstu3/Patient?identifier=http://MISAT.TW/MRTest2|SSN0123
+3.	birthdate
+A.	範例：../ Patient? birthdate=XX
+
+

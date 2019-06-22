@@ -1,0 +1,13 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <identifier>
+    <value value="A123987587"/>
+  </identifier>
+  <name>
+    <text value="林之一"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1978-05-12"/>
+  <managingOrganization>
+    <reference value="Organization/1142975"/>
+  </managingOrganization>
+</Patient>

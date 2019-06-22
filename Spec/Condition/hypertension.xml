@@ -1,0 +1,37 @@
+<Condition xmlns="http://hl7.org/fhir">
+ 
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <category>
+      <coding>
+         <system value="http://snomed.info/sct"/>
+         <code value="14657009"/>
+         <display value="Diagnosis"/>
+      </coding>
+      <text value="Diagnosis"/>
+   </category>
+   <severity>
+      <coding>
+         <system value="http://snomed.info/ct"/>
+         <code value="255604002"/>
+         <display value="mild"/>
+      </coding>
+      <text value="Mild"/>
+   </severity>
+   <code>
+      <coding>
+         <system value="http://snomed.info/ct"/>
+         <code value="38341003"/>
+         <display value="hypertension"/>
+      </coding>
+      <text value="hypertension"/>
+   </code>
+   <subject>
+      <reference value="Patient/1142979"/>
+   </subject>
+   <onsetAge>
+      <value value="68"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="a"/>
+   </onsetAge>
+</Condition>

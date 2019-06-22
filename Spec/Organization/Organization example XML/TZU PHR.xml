@@ -1,0 +1,18 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>  
+  </type>
+  <name value="慈濟醫療健康紀錄互通平台"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="0388888888"/>
+  </telecom>
+  <address>
+    <postalCode value="97004"/>
+    <text value="花蓮縣花蓮市中央路3段701號"/>
+  </address>
+</Organization>
