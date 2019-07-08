@@ -1,0 +1,1680 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+
+h1
+	{margin: 6.0pt 0cm;
+            line-height:200%;
+	        page-break-after:avoid;
+	        font-size:18.0pt;
+	        font-family:"Times New Roman","serif";
+	}
+ p.MsoNormal
+	{margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	        margin-left: 0cm;
+            margin-right: 0cm;
+            margin-top: 0cm;
+        }
+p.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	}
+a:link
+	{color:#0563C1;
+	text-decoration:underline;
+	text-underline:single;
+        }
+span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;
+	text-underline:single;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center" style="text-align:center"><span lang="EN-US" style="font-size:
+20.0pt;line-height:200%;font-family:標楷體;mso-ascii-theme-font:minor-fareast;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast">FHIR Patient Resource</span><span style="font-size:20.0pt;line-height:200%;font-family:標楷體;
+mso-ascii-theme-font:minor-fareast;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast">建議欄位說明<span lang="EN-US"><o:p></o:p></span></span></h1>
+    <p class="MsoNormal">
+        <span lang="EN-US">FHIR </span><span style="font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">標準應用廣泛，不同應用情境，其應採用的細部規格不盡相同。並且國際上公告之</span><span lang="EN-US"> FHIR </span><span style="font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">標準內容專業且詳盡，一般</span><span lang="EN-US"> IT </span><span style="font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">人員較不易了解。本文件之建議欄位參考原</span><span lang="EN-US"> FHIR Patient resource</span><span style="font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">標準，考量地區醫資系統現況，縮減不常用之欄位，提出一易於發展之參考規格。此規範並加入可能的應用情境說明及簡易使用範例，讓醫資標準更接地氣。以利於各醫療保健單位發展支援</span><span lang="EN-US"> FHIR </span><span style="font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">標準之系統。</span><span lang="EN-US"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">id :</span><span lang="EN-US"> </span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">patient resource </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">之唯一碼，類似資料表之主鍵。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">(1</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，每個</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> patient resource </span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">一定會有唯一之</span><span style="mso-bidi-font-size:14.0pt"> <span lang="EN-US">id</span></span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">id</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可由</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> FHIR server </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">產生，或</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> client </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">端上傳前預先指定</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l9 level2 lfo4">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可由</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">FHIR Server </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">產生</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">: </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">由</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> Server </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">端創建的</span><span style="mso-bidi-font-size:14.0pt"> <span lang="EN-US">id</span></span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，可完全去個人識別，利於在</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> PHR </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">及臨床研究資料庫應用中保護個人隱私。</span><span style="mso-bidi-font-size:14.0pt"> <span lang="EN-US">Post </span></span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">新增，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">id </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">自動產生。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l9 level2 lfo4">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">也可採用現行醫療健康系統之病歷號</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">(PatientID):</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">如醫院</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> HIS </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">或政府現有健康醫療系統之</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> PatientID</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">Put </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">修改，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">id </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可由</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">client </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">端給定。</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoNormal" style="margin-left:4.05pt;text-indent:21.0pt;mso-char-indent-count:
+1.5">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">議題：</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:52.0pt;text-indent:-24.0pt;
+mso-list:l6 level1 lfo2">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">跨院整合系統：</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">id</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">建議由入口網站產生，或是使用</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">hash</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">後的政府、保險單位制定的號碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(EX</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">身分證字號、社保碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">。前端範例程式</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">網頁端</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">病人資料讀取的時候</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(read or search)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可輸入身分證號，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">server</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">端再做</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">hash</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">進行搜尋</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:52.0pt;text-indent:-24.0pt;
+mso-list:l6 level1 lfo2">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">在各醫院內使用，較方便的方式</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">FHIR id</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">即為病歷號</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:52.0pt;text-indent:-24.0pt;
+mso-list:l6 level1 lfo2">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">iii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">假設各醫院有獨立的</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">FHIR Server</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">。在跨院、跨機構的資訊互通情境下，相同病患在不同</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> FHIR server </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">資訊互通會有</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">patient id</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">不一致的問題，主要之病人</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">FHIR id </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">參照</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(Master Patient Index) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">需進一步考量。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">identifier</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">：可加強身分確認之識別碼。可放置民眾各式證照號碼，如身分證字號、機構內病歷號、護照號碼、保險碼、台胞證碼、個人</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> e-mail</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">等多個資訊。並可依此查詢，以確認系統是否已建立此病人資料。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">n) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">可提供</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">0</span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">到</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">n</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">個</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">identifier</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">資料，以利</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">patient data</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">識別，並利於以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">identifier</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">資料查詢是否有此病人。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">identifier</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可包含以下子欄位</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:system(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">識別碼給定機構</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> URL )</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">value(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">此病人之識別碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:gray;mso-themecolor:background1;mso-themeshade:128">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128">use(</span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:gray;mso-themecolor:background1;mso-themeshade:128">識別碼用途</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128">)</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:gray;mso-themecolor:
+background1;mso-themeshade:128">、</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:gray;mso-themecolor:background1;mso-themeshade:128">type(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:gray;mso-themecolor:background1;mso-themeshade:128">此識別碼的型態</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128">)</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:gray;mso-themecolor:
+background1;mso-themeshade:128">、</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:gray;mso-themecolor:background1;mso-themeshade:128">Period(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:gray;mso-themecolor:background1;mso-themeshade:128">使用期限</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128">)</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:gray;mso-themecolor:
+background1;mso-themeshade:128">、以及</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:gray;mso-themecolor:background1;mso-themeshade:128"> assigner (</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:gray;mso-themecolor:background1;mso-themeshade:128">識別碼給定機構參考</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128">)</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，各欄位細部規格如下</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">2.1. system</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">：給定此</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">identifier code</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">的機構</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> URI</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(1</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，建議一定提供。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">URI </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">原則上由編碼給定單位產生。若編碼給定單位無此</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">URI</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，可由各地之標準訂立組織來給定及維護。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:14.0pt;mso-para-margin-left:1.0gd;
+text-indent:14.0pt;mso-char-indent-count:1.0">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">2.2. value</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">：編碼單位給此病人之代碼。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(1</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，建議一定提供。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:1.5">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題：</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:35.45pt;mso-para-margin-left:0gd;
+text-indent:-35.45pt;mso-text-indent-alt:0cm;mso-list:l7 level2 lfo3">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">system</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">value</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">原</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> FHIR </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">標準數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">1)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，改為</span><span style="mso-bidi-font-size:14.0pt"> <span lang="EN-US">(1</span></span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">1) </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">必須提供</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:35.45pt;mso-para-margin-left:0gd;
+text-indent:-35.45pt;mso-text-indent-alt:0cm;mso-list:l7 level2 lfo3">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">不使用</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">use</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">type</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">period</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">assigner</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">等欄位</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">active</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">：是否為使用中的病人。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">1) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，可不提供，或給定</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> true </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">或</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> false</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">。此欄位可標示長期未到該單位就醫的病人，或者依據醫療單位的商業規則定義之，主要用以篩選病人清單排除不常見</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">/</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">不活躍</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(inactive)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">的病人。而基於某些理由，「過逝的病人」也可能被設為</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">inactive(</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">意即</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">active value=false)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，但也可能病人過逝後一段時間，又被設定為</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> active(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">意即</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">active value=true)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:1.5">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題：</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l8 level1 lfo6">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">可否用來標示照護中心或特定醫院已出院之病人</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">?
+<o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">name</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">：病人姓名。姓名全名放置於</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">text</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，以利呈現。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，可存在多個姓名，如繁體、簡體、英文的姓名。英文姓名可參考護照姓名，分</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">Last name</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">與</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">First name</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">，分別放入</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">family(</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">姓</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">與</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">given(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">名</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">標籤。中文姓名</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">First name</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">與</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">Last name </span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">放置規格如下</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size: 14.0pt; background: yellow; mso-highlight: yellow">4.1 text</span><span style="mso-bidi-font-size: 14.0pt; font-family: 標楷體; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 標楷體; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: &quot;Times New Roman&quot;; mso-hansi-theme-font: minor-latin; background: yellow; mso-highlight: yellow">：放置姓名</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">4.2 family</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">：可放姓氏。或空白，當上傳系統姓名合在一起。</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">4.3 given</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">：可放名稱。或姓名全名，以利查詢。</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題：</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l4 level1 lfo7">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">不使用</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">use</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">prefix</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">suffix</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">period </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">等子欄位</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l4 level1 lfo7">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">family </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">空白，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">given </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">放全名規格需進一步確立，並測試</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> FHIR API</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">搜尋狀況。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l4 level1 lfo7">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>iii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">中文特殊字元跨系統互通，在各系統支援之狀況，如可否輸入、查詢、呈現須測試。是否提供測試範例及周全之測試中文字元集。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l4 level1 lfo7">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>iv.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">回台灣就醫，大陸病歷中之姓名、地址、及文字呈現資訊之簡體中文是否會強制轉為繁體使用。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt">telecom</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">病人聯絡資訊。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，可不提供，或記錄電話、手機號碼、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">email</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、社交軟體帳號</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">如</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> Line</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">WeChat</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">Facebook) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin">等多組聯絡資訊。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">telecom </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">可包含以下子欄位</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:system(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">通訊系統</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">value(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">系統中對應之帳號或號碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">use(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">此帳號或號碼之用途</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">rank(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">聯絡資訊之優先使用次序</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">Period(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">使用期限</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，各欄位細部規格如下</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">:<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">5.1. system</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">通訊系統。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，可不提供，或數值可為</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">phone | fax | email | pager | url | sms | other </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">等，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">phone, fax, pager, and email </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可直接作為</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> system </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">的</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> value </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">屬性，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">url </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">及</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> other </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">則以對應之通訊系統連結如</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> FB</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">之連結</span><span lang="EN-US"><a href="https://www.facebook.com/"><span style="mso-bidi-font-size:14.0pt">https://www.facebook.com/</span></a></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">作為此</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> system </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">的值</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">5.2. value: </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">通訊系統中對應之帳號或號碼。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，可能沒有或不提供，也可提供電話號碼、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">email </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">帳號、健康平台病人線上聯絡帳號、</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">FB </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">帳號等。電話、手機、簡訊格式建議存放地區</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(National) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">可直接撥接之標準規格，如台灣地區之家裡電話：</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt"> (03)8561234</span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">公司電話</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> (04) 22513333 ext 5438</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">，手機號碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> 0954787878 </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">等，</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">email</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">Line</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">WeChat </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">存放其帳號</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">5.2. use</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">此帳號或號碼之用途，數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">；可不包含此資訊</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，或提供以下編碼數值</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(1) :home | work | temp | old | mobile<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">5.3. rank</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">此聯絡資訊之優先使用次序，產生次數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">；可不包含此資訊</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">，或以正整數表示優先次序</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(1) :1 =</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">為最優先</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt">5.3. Period</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">使用期限，產生次數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">；通常不確定聯絡資訊使用期限，因此不包含此資訊</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">(0)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">。若清楚聯絡資訊使用期限，則提供開始及結束時間。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp; </span>&lt;telecom&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;system value=&quot;phone&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;value value=&quot;(03) 5555 6473&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;use value=&quot;work&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;rank value=&quot;1&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp; </span>&lt;/telecom&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp; </span>&lt;telecom&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;system value=&quot;phone&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;value value=&quot;(03) 3410 5613&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;use value=&quot;mobile&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:28.0pt">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>&lt;rank value=&quot;2&quot;/&gt; <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><span style="mso-spacerun:yes">&nbsp; </span>&lt;/telecom&gt;<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題：</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l2 level1 lfo8">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">電話號碼是否分段，如</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">0954787878 </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">改為</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">0954 787 878 or 0954-787-878<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l2 level1 lfo8">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">是否有國際聯絡電話需求，其建議格視為何</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">? </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">或參考</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">https://www.itu.int/rec/T-REC-E.123-200102-I/e<o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:66.55pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l1 level1 lfo5">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">簡訊自動通知有其需求，自動發送簡訊機制需考量。是否可設定群組通知，其群組</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"> ID </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">為何</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt">? </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">是否需考慮社群群組及簡訊自動通知權限管控機制</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">gender</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：病人性別。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或給定以下數值</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">:male | female | other | unknown <o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:gray;mso-themecolor:background1;
+mso-themeshade:128"><span style="mso-list:Ignore">7.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">birthDate</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：病人生日。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或提供生日，格式</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">:</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">年</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">西元四碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)-</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">月</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">兩碼含</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">0)-</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">日</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">兩碼含</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">0)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">。</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:gray;mso-themecolor:background1;mso-themeshade:128">某些應用需曉得病人年齡，又不希望公開病人確定生日，則生日中出生月份及日期可亂數產生，或出生日期可亂數產生。且亂數生成月份及日期，不同於真實生日月份及日期。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">8.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">deceased[x]</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：</span><span style="font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin">病人是否已死亡。</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或給定是否死亡</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(true or false)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">或死亡日期</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">(date </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">格式</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">。使用介面須能提供紀錄與呈現是否死亡或死亡時間之功能。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題<span style="color:black;mso-themecolor:text1">：</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:2.0cm;mso-para-margin-left:0gd;
+text-indent:-2.0cm;mso-text-indent-alt:-14.15pt;mso-list:l0 level3 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">提供範例</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">9.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">address: </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">住址。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或提供</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">1</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">到多個地址，可記錄居住地址、通訊地址、戶籍地址等資訊。原</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> FHIR </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">規範可包含</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> use(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">用途</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">type(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">類別</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">text(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">住址字串</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">line(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">巷弄</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">city(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">市</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">district(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">區</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">state(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">州省</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">postalCode(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">郵遞區號</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">country(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">國家</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">period(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">使用期間</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">等欄位，建議使用</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">:<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">9.1. use</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">：地址用途，數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">home | work | temp | old | billing </span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">等代碼表示</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">9.2. type</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">：型態為寄件或居住地址。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">postal | physical | both </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">等代碼表示。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">9.3. text</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">：字串型態的住址。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，但通常會紀錄字串格式之住址。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:28.0pt;mso-para-margin-left:2.0gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">9.4. postalCode</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">：郵遞區號。可不提供</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">也可將</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1"> postalCode </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">直接加入</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> text </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">字串住址當中</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，或記錄郵遞區號號碼。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題<span style="color:black;mso-themecolor:text1">：</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l5 level1 lfo9">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">line(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">巷弄</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">city(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">市</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">district(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">區</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">state(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">州省</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">country(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">國家</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">period(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">使用期間</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">等欄位，是否不建議使用。住址直接在</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> text </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">紀錄即可。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l5 level1 lfo9">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">應可記錄繁體或簡體中文，須測試其跨系統互通。例如病人住在大陸，台灣醫院系統可否紀錄及處理簡體住址。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l5 level1 lfo9">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>iii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">是否提供英文代碼之中文對應，</span><span style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">如</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">address.use code</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">之中文對應，以利在使用介面上呈現。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l5 level1 lfo9">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>iv.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">當病人在</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> FHIR server</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">上有多個地址資訊，是否可設定及選擇僅提供其中幾個住址。</span><span style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> <span lang="EN-US">Telcom </span></span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">聯絡資訊也有類似議題。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">10.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">maritalStatus</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：病人目前的婚姻狀態。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0-1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或以代碼表示。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">HL7 </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">代碼表共提供</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">11</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">種婚姻狀態代碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">如：婚姻終止、離婚、合法分居、已婚等</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，代碼詳細資訊於下列連結：</span><span lang="EN-US"><a href="https://www.hl7.org/fhir/valueset-marital-status.html"><span style="mso-bidi-font-size:14.0pt">https://www.hl7.org/fhir/valueset-marital-status.html</span></a></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題<span style="color:black;mso-themecolor:text1">：是否簡化原</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> HL7 </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">代碼表，提供已婚</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(M)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、未婚</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(U)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、婚姻狀態不明</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(unk) </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">三種代碼</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">11.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">multipleBirth[x]: </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">病人是否為多胞胎其中之一。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或給定是否為多胞胎</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(true or false)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">或多胞胎中第幾個</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">正整數</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">。此欄位暫不考慮使用。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題<span style="color:black;mso-themecolor:text1">：可與婦產科討論新生兒多胞胎之</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> patient name</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;
+mso-themecolor:text1">identifier </span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">表示方式。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">12.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">photo</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：病人相片。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或給定</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">URL </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">或</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> base 64 </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">編碼以包含相片或相片連結。建議以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> URL </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:text1">連結方式取得相片。相片可上傳到各式網頁多媒體雲端伺服器或以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> FHIR media </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">規格上傳</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;
+mso-themecolor:text1"> FHIR server</span><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">。</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="text-indent:28.0pt;mso-char-indent-count:2.0">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題<span style="color:black;mso-themecolor:text1">：</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l10 level1 lfo10">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">相片及醫學影像上傳後，建議以上傳者的私鑰加密保護，以防範駭客或不良之雲端系統管理者竊取及濫用此隱私資料。使用者端需資料擁有者</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">上傳者</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">受權，並提供解密密鑰，以解讀加密資訊。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">13.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">contact</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：病人之聯絡人。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或提供受病人信任的親友</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">如：監護人、伴侶或友人</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">或<b style="mso-bidi-font-weight:
+normal">長期</b>服務人員聯絡資訊。原</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"> FHIR </span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">規範可包含</span><span style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1"> <span lang="EN-US">relationship(</span></span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">與病人之關係</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">name(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">姓名</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">telecom(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">聯絡方式</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">address(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">地址</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">gender(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">性別</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">organization(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">聯絡或服務人員所屬組織</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> period(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">可聯絡的期間</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">name</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">telecom</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">address</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">gender </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">可資料格式可參考上列</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"> patient resource </span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">規範。其他建議使用欄位規格</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">:<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:35.4pt;mso-para-margin-left:2.53gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">13.1.</span><span lang="EN-US"> </span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">relationship</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">：聯絡人與病人之關係。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或紀錄關係代碼。可能針對某些健康醫療照護，如手術同意、醫療費用處裡、照護服務、保險申請及給付等，會有不同之聯絡對象。關係代碼需進一步增修確認。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:35.4pt;mso-para-margin-left:2.53gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">relationship</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">現行關係代碼參考</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">:https://www.hl7.org/fhir/patient-definitions.html#Patient.contact.relationship<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:35.4pt;mso-para-margin-left:2.53gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">13.2. organization</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">：病人之聯絡人所屬組織。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">，可不提供，或參考所屬組織。大型組織建議建</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1">立分層組織架構，病人通常連結到基層之聯絡組織與人員。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"><br />
+        </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin">議題<span style="color:black;mso-themecolor:
+text1">：</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l3 level1 lfo11">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">relationship </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1">的代碼及其中文說明須進一步確認</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"><span style="mso-tab-count:1"> </span><o:p></o:p></span>
+    </p>
+    <p class="MsoListParagraph" style="margin-left:48.0pt;mso-para-margin-left:0gd;
+text-indent:-48.0pt;mso-text-indent-alt:-5.45pt;mso-list:l3 level1 lfo11">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1">考慮上班及排班，醫療照護組織及人員的服務時間，無法以</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">period </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1">開始及結束時間表示。醫療照護人員的</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">服務時間需另外的方式提供。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoListParagraph" style="margin-left:24.0pt;mso-para-margin-left:0gd;
+text-indent:-24.0pt;mso-list:l0 level1 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-bidi-font-family:
+標楷體;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">14.<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span><![endif]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">communication</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">：病人可用的溝通語言種類。數值個數</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">(0</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:black;mso-themecolor:text1">n)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1">，可不提供，或提供病人可溝通之語言。在多語系國家，提供此資訊，可利於安排病人就醫。當病人身處異地，或僅熟悉特殊母語，而不熟當地官方語言，亦可用此欄位特別註記說明。以利病患就醫時，確認或安排翻譯人員。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">communication </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">可包含以下子欄位</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">: </span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">language(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">可溝通之語言代碼或文字說明</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">、</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">preferred(</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">註明此與語言是否為就醫慣用語言</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">)</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">。</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:標楷體;color:black;
+mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:標楷體;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">14.1.</span><span lang="EN-US" style="mso-fareast-font-family:標楷體;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:black;mso-themecolor:text1"> </span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:標楷體;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">language</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;color:black;mso-themecolor:text1">：可溝通之語言代碼或文字說明，數值個數<span lang="EN-US">(1</span></span><span style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:標楷體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
+text1">…</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;color:black;mso-themecolor:text1">1)</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;color:black;mso-themecolor:text1">，必須提供，數值建議為</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"> common language:</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:
+標楷體;color:black;mso-themecolor:text1"><span style="mso-spacerun:yes">&nbsp; </span></span><span class="MsoHyperlink"><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:標楷體;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin"><a href="https://www.hl7.org/fhir/valueset-languages.html">https://www.hl7.org/fhir/valueset-languages.html</a></span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"> </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">規範之代碼，或至少須在</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"> all-language </span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">編碼範圍內</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">:<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span class="MsoHyperlink"><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:標楷體;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin"><a href="https://www.hl7.org/fhir/valueset-all-languages.html">https://www.hl7.org/fhir/valueset-all-languages.html</a></span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span class="MsoHyperlink"><span lang="EN-US" style="mso-bidi-font-size:14.0pt;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:標楷體;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin"><a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a></span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;color:black;mso-themecolor:
+text1">台灣各式語言編碼<span lang="EN-US">:</span></span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:標楷體;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-hansi-theme-font:major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1">https://osmtw.hackpad.tw/ep/pad/static/ngewyizFYzN<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:標楷體;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-latin;
+color:black;mso-themecolor:text1">14.2. preferred</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;color:black;mso-themecolor:text1">：註明此與語言是否為就醫慣用語言，數值個數<span lang="EN-US">(0…1)</span>，可不提供，或提供</span><span lang="EN-US" style="mso-bidi-font-size:
+14.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:標楷體;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1">true | false</span><span style="mso-bidi-font-size:
+14.0pt;font-family:標楷體;color:black;mso-themecolor:text1">。<span lang="EN-US"><o:p></o:p></span></span></p>
+    <p class="MsoNormal" style="margin-left:21.3pt;mso-para-margin-left:1.52gd">
+        <span style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:標楷體;mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+minor-latin">議題</span><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;
+color:black;mso-themecolor:text1">：<span lang="EN-US"><o:p></o:p></span></span></p>
+    <p class="MsoListParagraph" style="margin-left:72.0pt;mso-para-margin-left:0gd;
+text-indent:-72.0pt;mso-text-indent-alt:-24.0pt;mso-list:l0 level3 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;font-family:標楷體;mso-bidi-font-family:
+標楷體;color:black;mso-themecolor:text1"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>i.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;font-family:標楷體;color:black;mso-themecolor:
+text1">可否找到其他地區語言編碼連結<span lang="EN-US"><o:p></o:p></span></span></p>
+    <p class="MsoListParagraph" style="margin-left:72.0pt;mso-para-margin-left:0gd;
+text-indent:-72.0pt;mso-text-indent-alt:-24.0pt;mso-list:l0 level3 lfo1">
+        <![if !supportLists]><span lang="EN-US" style="mso-bidi-font-size:14.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-latin;color:gray;mso-themecolor:background1;
+mso-themeshade:128"><span style="mso-list:Ignore"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>ii.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span style="mso-bidi-font-size:14.0pt;
+font-family:標楷體;color:black;mso-themecolor:text1">是否提供多語系之標準化病人臨床案例</span><span lang="EN-US" style="mso-bidi-font-size:14.0pt;color:gray;mso-themecolor:background1;
+mso-themeshade:128"><o:p></o:p></span></p>
+
+</body>
+</html>
