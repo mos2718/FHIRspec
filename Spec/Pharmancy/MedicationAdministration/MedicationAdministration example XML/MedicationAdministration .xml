@@ -1,0 +1,28 @@
+<MedicationAdministration>	
+	<id value=""/>
+	<status value="completed"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/medication-admin-category"/>
+			<code value="Community"/>
+		</coding>
+	</category>
+	<subject>
+		<reference value="Patient/9957"/>
+	</subject>
+	<effectiveDateTime>
+		<start value="2018-03-12T17:58:02"/>
+		<end value="2018-03-12T17:58:02"/>
+	</effectiveDateTime>
+	<prescription>
+		<reference value="MedicationRequest/10208"/>
+	</prescription>
+	<device>
+		<reference value="Device/4999"/>
+		<display value="Medical device"/>
+	</device>
+</MedicationAdministration>
+	
+	
+
+
